@@ -2,12 +2,12 @@
   <nav>
     <v-app-bar flat app>
       <v-app-bar-nav-icon
-        class="grey--text"
+        class="deep-purple--text text--accent-2"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-toolbar-title class="text-uppercase grey--text">
+      <v-toolbar-title class="text-uppercase">
         <span class="font-weight-light">Raja</span>
-        <span>Chaudhary</span>
+        <span class="deep-purple--text text--accent-2">Chaudhary</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn plain color="grey">
@@ -16,7 +16,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app class="primary">
+    <v-navigation-drawer v-model="drawer" app class="deep-purple accent-2">
       <v-list dense>
         <v-list-item
           v-for="link in links"
