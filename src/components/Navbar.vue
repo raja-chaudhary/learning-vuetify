@@ -10,10 +10,22 @@
         <span class="deep-purple--text text--accent-2">Chaudhary</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn plain color="grey">
-        <span>Sign Out</span>
-        <v-icon right>mdi-exit-to-app</v-icon>
-      </v-btn>
+      <a href="./resume.pdf" target="_blank" style="text-decoration: none"
+        ><v-btn plain color="black" class="d-none d-sm-flex">
+          <span class="font-weight-light">Resume</span>
+          <v-icon class="deep-purple--text text--accent-2"
+            >mdi-file-pdf-box</v-icon
+          >
+        </v-btn></a
+      >
+      <a href="./resume.pdf" target="_blank" style="text-decoration: none"
+        ><v-btn plain color="black" class="d-flex d-sm-none">
+          <span class="font-weight-light caption">Resume</span>
+          <v-icon class="deep-purple--text text--accent-2"
+            >mdi-file-pdf-box</v-icon
+          >
+        </v-btn></a
+      >
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" app class="deep-purple accent-2">
@@ -44,9 +56,17 @@ export default {
     return {
       drawer: false,
       links: [
-        { icon: "mdi-view-dashboard", text: "Home", route: "/" },
-        { icon: "mdi-folder", text: "My Projects", route: "/projects" },
-        { icon: "mdi-account", text: "Team", route: "/team" },
+        { icon: "mdi-shield-home-outline", text: "Home", route: "/" },
+        {
+          icon: "mdi-folder-star-outline",
+          text: "Skills & Portfolio",
+          route: "/portfolio",
+        },
+        {
+          icon: "mdi-human-greeting-proximity",
+          text: "Contact",
+          route: "/contact",
+        },
       ],
     };
   },
