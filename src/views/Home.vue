@@ -198,6 +198,27 @@ import { VueTyper } from "vue-typer";
 import VueCompareImage from "vue-compare-image";
 export default {
   name: "app",
+  metaInfo: {
+    title: "Home",
+    titleTemplate: "Raja Chaudhary → %s",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "description", content: "Raja Chaudhary's Portfolio Website" },
+      { charset: "utf-8" },
+      { property: "og:title", content: "Raja Chaudhary" },
+      { property: "og:site_name", content: "Raja Chaudhary" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "http://www.rajachaudhary.com" },
+      {
+        property: "og:image",
+        content: "https://i.imgur.com/CyLZ4N9.jpg",
+      },
+      {
+        property: "og:description",
+        content: "Raja Chaudhary's Portfolio Website",
+      },
+    ],
+  },
   components: {
     "vue-typer": VueTyper,
     VueCompareImage,
