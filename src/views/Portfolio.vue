@@ -1,12 +1,12 @@
 <template>
   <div class="portfolio">
     <!-- Skills -->
-    <div class="text-center deep-purple--text text--accent-2 text-h5 mb-4">
-      Skills
+    <div class="text-center text-h5 my-4">
+      Skill<span class="deep-purple--text text--accent-2">Proficiency</span>
     </div>
     <!-- Large Screens -->
     <v-container class="d-none d-sm-flex">
-      <v-layout row wrap class="pa-3">
+      <v-layout row justify-center align-center wrap class="pa-3">
         <v-flex
           xs12
           sm6
@@ -159,12 +159,12 @@
     </v-container>
 
     <!-- Frameworks -->
-    <div class="text-center deep-purple--text text--accent-2 text-h5 my-4">
-      Frameworks
+    <div class="text-center text-h5 my-4">
+      Frameworks<span class="deep-purple--text text--accent-2">Used</span>
     </div>
     <!-- Large Screens -->
     <v-container class="d-none d-sm-flex">
-      <v-layout row wrap class="pa-3">
+      <v-layout row justify-center align-center wrap class="pa-3">
         <v-flex
           xs12
           sm6
@@ -317,9 +317,145 @@
     </v-container>
 
     <!-- Projects -->
-    <div class="text-center deep-purple--text text--accent-2 text-h5 my-4">
-      Projects
+    <div class="text-center text-h5 my-4">
+      Portfolio<span class="deep-purple--text text--accent-2">Projects</span>
     </div>
+    <v-container class="pa-4 text-center">
+      <v-layout row justify-center align-center wrap class="mt-4 pt-2">
+        <v-dialog
+          v-model="project.dialog"
+          lazy
+          max-width="1000"
+          v-for="project in projects"
+          :key="project.title"
+        >
+          <template v-slot:activator="{ on }">
+            <v-flex xs12 sm6 md4 lg4 xl4 v-on="on">
+              <v-card hover color="transparent" class="ma-2">
+                <v-img
+                  :src="project.poster"
+                  :alt="project.title"
+                  height="230"
+                  lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
+                ></v-img>
+                <v-card-title primary-title class="justify-center">{{
+                  project.title
+                }}</v-card-title>
+              </v-card>
+            </v-flex>
+          </template>
+          <v-card v-if="project.dialog">
+            <v-img :src="project.poster"></v-img>
+            <v-card-text>
+              <h3 class="headline my-1">
+                <span class="black--text">Technology</span>
+              </h3>
+              <v-chip color="deep-purple accent-2" text-color="white">{{
+                project.tech.tech1
+              }}</v-chip>
+              <v-chip color="deep-purple accent-2" text-color="white">{{
+                project.tech.tech2
+              }}</v-chip>
+              <v-chip color="deep-purple accent-2" text-color="white">{{
+                project.tech.tech3
+              }}</v-chip>
+              <v-chip color="deep-purple accent-2" text-color="white">{{
+                project.tech.tech4
+              }}</v-chip>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn
+                flat
+                large
+                outlined
+                dark
+                color="deep-purple accent-2"
+                :href="project.git"
+                target="_blank"
+              >
+                <v-icon left>mdi-github</v-icon>GitHub
+              </v-btn>
+              <v-btn
+                large
+                flat
+                outlined
+                dark
+                color="deep-purple accent-2"
+                :href="project.demo"
+                target="_blank"
+              >
+                <v-icon left>mdi-monitor</v-icon>Demo
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+      </v-layout>
+    </v-container>
+
+    <!-- Fun Projects -->
+    <div class="text-center text-h5 my-4">
+      Fun<span class="deep-purple--text text--accent-2">Projects</span>
+    </div>
+    <v-container class="pa-4 text-center">
+      <v-layout row justify-center align-center wrap class="mt-4 pt-2">
+        <v-dialog
+          v-model="funproject.dialog"
+          lazy
+          max-width="1000"
+          v-for="funproject in funprojects"
+          :key="funproject.title"
+        >
+          <template v-slot:activator="{ on }">
+            <v-flex xs12 sm6 md4 lg4 xl4 v-on="on">
+              <v-card hover color="transparent" class="ma-2">
+                <v-img
+                  :src="funproject.poster"
+                  :alt="funproject.title"
+                  height="230"
+                  lazy-src="https://cdn.dribbble.com/users/503653/screenshots/3143656/fluid-loader.gif"
+                ></v-img>
+                <v-card-title primary-title class="justify-center">{{
+                  funproject.title
+                }}</v-card-title>
+              </v-card>
+            </v-flex>
+          </template>
+          <v-card v-if="funproject.dialog">
+            <v-img :src="funproject.poster"></v-img>
+            <v-card-text>
+              <h3 class="headline my-1 black--text">
+                Built with
+                <span class="deep-purple--text text--accent-2">Python</span>
+              </h3>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn
+                flat
+                large
+                outlined
+                dark
+                color="deep-purple accent-2"
+                :href="funproject.git"
+                target="_blank"
+              >
+                <v-icon left>mdi-github</v-icon>GitHub
+              </v-btn>
+              <v-btn
+                large
+                flat
+                outlined
+                dark
+                color="deep-purple accent-2"
+                :href="funproject.demo"
+                target="_blank"
+              >
+                <v-icon left>mdi-monitor</v-icon>Demo
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
@@ -327,7 +463,6 @@
 export default {
   data() {
     return {
-      // reveal: false,
       skills: [
         {
           type: "Python",
@@ -407,6 +542,65 @@ export default {
           reveal: false,
         },
       ],
+      projects: [
+        {
+          dialog: false,
+          title: "Dudap (Dig Up Da Past)",
+          git: "https://github.com/raja-chaudhary/duDap",
+          demo: "https://www.dudap.xyz/",
+          tech: {
+            tech1: "Django/Python",
+            tech2: "HTMX",
+            tech3: "PostgreSQL",
+            tech4: "Redis/Celery",
+          },
+          poster: "https://i.imgur.com/QYsh68q.png",
+        },
+        {
+          dialog: false,
+          title: "Portfolio Website",
+          git: "https://github.com/raja-chaudhary/learning-vuetify",
+          demo: "https://www.rajachaudhary.com/",
+          tech: {
+            tech1: "Vue/Vuetify",
+            tech2: "Material Css",
+            tech3: "Git",
+            tech4: "Heroku",
+          },
+          poster: "https://i.imgur.com/U1aVAn9.png",
+        },
+      ],
+      transparent: "rgba(255, 255, 255, 0)",
+      funprojects: [
+        {
+          dialog: false,
+          title: "Hangman",
+          git: "https://github.com/raja-chaudhary/hangman_python",
+          demo: "https://replit.com/@rajachaudhary/Hangman-Python?embed=1&output=1#main.py",
+          poster: "https://i.imgur.com/zYVNlvU.png",
+        },
+        {
+          dialog: false,
+          title: "Password Generator",
+          git: "https://github.com/raja-chaudhary/password_generator_python",
+          demo: "https://replit.com/@rajachaudhary/Password-Generator-Python?embed=1&output=1#main.py",
+          poster: "https://i.imgur.com/oeXwNux.png",
+        },
+        {
+          dialog: false,
+          title: "Ceaser Cypher",
+          git: "https://github.com/raja-chaudhary/ceasar_cipher_python",
+          demo: "https://replit.com/@rajachaudhary/Ceasar-Cipher-Python?embed=1&output=1#main.py",
+          poster: "https://i.imgur.com/xjJfXI1.png",
+        },
+        {
+          dialog: false,
+          title: "Blind Auction",
+          git: "https://github.com/raja-chaudhary/blind_auction",
+          demo: "https://replit.com/@rajachaudhary/Blind-Auction?embed=1&output=1#main.py",
+          poster: "https://i.imgur.com/OJfxHoR.png",
+        },
+      ],
     };
   },
 };
@@ -417,5 +611,18 @@ export default {
   opacity: 1 !important;
   position: absolute;
   width: 100%;
+}
+#project {
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#project:not(.on-hover) {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.show-btns {
+  color: rgba(255, 255, 255, 1) !important;
 }
 </style>
