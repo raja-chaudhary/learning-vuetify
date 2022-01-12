@@ -77,7 +77,7 @@
     <v-container class="my-5">
       <v-card flat class="pa-3">
         <v-layout row wrap class="pa-3">
-          <v-flex xs4 sm4 md4>
+          <v-flex xs4 sm4 md4 class="px-0">
             <div
               class="
                 subtitle-2
@@ -88,7 +88,7 @@
             >
               Social Media
             </div>
-            <div class="my-2">
+            <div class="my-2 px-1" style="height: 50px">
               <span class="hidden-sm-and-down">LinkedIn</span>
               <a
                 href="https://www.linkedin.com/in/raja-chaudhary/"
@@ -100,7 +100,7 @@
                 ></a
               >
             </div>
-            <div class="my-2">
+            <div class="my-2 px-1" style="height: 50px">
               <span class="hidden-sm-and-down">GitHub</span>
               <a
                 href="https://github.com/raja-chaudhary"
@@ -113,7 +113,7 @@
               >
             </div>
           </v-flex>
-          <v-flex xs4 sm4 md4>
+          <v-flex xs4 sm4 md4 class="px-0">
             <div
               class="
                 subtitle-2
@@ -124,7 +124,7 @@
             >
               Username/Link
             </div>
-            <div class="my-2 hidden-sm-and-down">
+            <div class="my-2 px-1 hidden-sm-and-down" style="height: 50px">
               <a
                 href="https://www.linkedin.com/in/raja-chaudhary/"
                 target="_blank"
@@ -133,7 +133,7 @@
                 >linkedin.com/raja-chaudhary</a
               >
             </div>
-            <div class="my-2 hidden-sm-and-up body-2">
+            <div class="my-2 px-1 hidden-sm-and-up body-2" style="height: 50px">
               <a
                 href="https://www.linkedin.com/in/raja-chaudhary/"
                 target="_blank"
@@ -142,7 +142,7 @@
                 >linkedin.com/raja-chaudhary</a
               >
             </div>
-            <div class="my-2 hidden-sm-and-down">
+            <div class="my-2 px-1 hidden-sm-and-down" style="height: 50px">
               <a
                 href="https://github.com/raja-chaudhary"
                 class="my-2"
@@ -150,7 +150,7 @@
                 >github.com/raja-chaudhary</a
               >
             </div>
-            <div class="my-2 hidden-sm-and-up body-2">
+            <div class="my-2 px-1 hidden-sm-and-up body-2" style="height: 50px">
               <a
                 href="https://github.com/raja-chaudhary"
                 class="my-2"
@@ -170,19 +170,41 @@
             >
               Status
             </div>
-            <div class="my-2 green--text text--darken-1 hidden-sm-and-down">
-              Actively Looking for Job
-            </div>
             <div
-              class="body-2 my-2 green--text text--darken-1 hidden-sm-and-up"
+              class="my-2 pa-1 green--text text--darken-1 hidden-sm-and-down"
+              style="height: 50px"
             >
               Actively Looking for Job
             </div>
-            <div class="my-2 yellow--text text--darken-4 hidden-sm-and-down">
+            <div
+              class="
+                body-2
+                my-2
+                px-1
+                green--text
+                text--darken-1
+                hidden-sm-and-up
+              "
+              style="height: 50px; line-height: normal"
+            >
+              Actively Looking for Job
+            </div>
+            <div
+              class="my-2 pa-1 yellow--text text--darken-4 hidden-sm-and-down"
+              style="height: 50px"
+            >
               Moderately Active
             </div>
             <div
-              class="my-2 yellow--text text--darken-4 hidden-sm-and-up body-2"
+              class="
+                my-2
+                px-1
+                yellow--text
+                text--darken-4
+                hidden-sm-and-up
+                body-2
+              "
+              style="height: 50px; line-height: normal"
             >
               Moderately Active
             </div>
