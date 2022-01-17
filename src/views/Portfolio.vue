@@ -538,7 +538,7 @@ export default {
           line1: "Currently learning.",
           line2: "'A perfect front-end framework that compliments Django.'",
           detail:
-            "My portfolio website is built on Vuetify, a framework on top of Vue. Finishing my portfolio website gave me confidence to work more with Vue in the future. I can now create components, routes, can integrate third-party plugins etc.",
+            "Making AJAX calls were never so easy, HTMX has completely eradicated the scope to use jQuery/AJAX libraries.",
           reveal: false,
         },
       ],
@@ -572,6 +572,13 @@ export default {
       ],
       transparent: "rgba(255, 255, 255, 0)",
       funprojects: [
+        {
+          dialog: false,
+          title: "Blackjack",
+          git: "https://github.com/raja-chaudhary/blackjack",
+          demo: "https://replit.com/@rajachaudhary/BlackJack-Python?embed=1&output=1#main.py",
+          poster: "https://i.imgur.com/KJIhFEd.png",
+        },
         {
           dialog: false,
           title: "Hangman",
