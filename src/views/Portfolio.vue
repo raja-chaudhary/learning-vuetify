@@ -574,6 +574,13 @@ export default {
       funprojects: [
         {
           dialog: false,
+          title: "Guess the Number",
+          git: "https://github.com/raja-chaudhary/guess-the-number",
+          demo: "https://replit.com/@rajachaudhary/Guess-The-Number-Python?embed=1&output=1#main.py",
+          poster: "https://i.imgur.com/NoPP4vh.png",
+        },
+        {
+          dialog: false,
           title: "Blackjack",
           git: "https://github.com/raja-chaudhary/blackjack",
           demo: "https://replit.com/@rajachaudhary/BlackJack-Python?embed=1&output=1#main.py",
