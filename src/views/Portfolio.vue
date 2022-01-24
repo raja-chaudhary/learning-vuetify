@@ -543,6 +543,7 @@ export default {
         },
       ],
       projects: [
+        // Relationship Management Tool
         {
           dialog: false,
           title: "Dudap (Dig Up Da Past)",
@@ -556,6 +557,7 @@ export default {
           },
           poster: "https://i.imgur.com/QYsh68q.png",
         },
+        // Portfolio
         {
           dialog: false,
           title: "Portfolio Website",
@@ -568,6 +570,20 @@ export default {
             tech4: "Heroku",
           },
           poster: "https://i.imgur.com/U1aVAn9.png",
+        },
+        // Chat App
+        {
+          dialog: false,
+          title: "Let's Chat",
+          git: "https://github.com/raja-chaudhary/letschat",
+          demo: "https://appletschat.herokuapp.com/",
+          tech: {
+            tech1: "Django",
+            tech2: "HTMX",
+            tech3: "Redis",
+            tech4: "Daphne",
+          },
+          poster: "https://i.imgur.com/GzPRGly.png",
         },
       ],
       transparent: "rgba(255, 255, 255, 0)",
@@ -602,7 +618,7 @@ export default {
         },
         {
           dialog: false,
-          title: "Ceaser Cypher",
+          title: "Caeser Cypher",
           git: "https://github.com/raja-chaudhary/ceasar_cipher_python",
           demo: "https://replit.com/@rajachaudhary/Ceasar-Cipher-Python?embed=1&output=1#main.py",
           poster: "https://i.imgur.com/xjJfXI1.png",
