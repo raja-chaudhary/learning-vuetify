@@ -483,7 +483,7 @@ export default {
           line2:
             "'Been writing enterprise systems in Java for past 2 years.'",
           detail:
-            "Understand the OOP concepts and have used Java to write enterprise systems. Have also used Java to write RESTful APIs using Spring Boot.",
+            "Understands the OOP concepts and have used Java to write enterprise systems. Have also used Java to write RESTful APIs using Spring Boot.",
           reveal: false,
         },
         {
@@ -556,7 +556,7 @@ export default {
         {
           type: "HTMX",
           icon: "mdi-code-tags",
-          exp: "4 months of experience",
+          exp: "6+ months of experience",
           line1: "Currently learning.",
           line2: "'A perfect front-end framework that compliments Django.'",
           detail:
@@ -612,7 +612,7 @@ export default {
           dialog: false,
           title: "Let's Chat",
           git: "https://github.com/raja-chaudhary/letschat",
-          demo: "https://appletschat.herokuapp.com/",
+          demo: "#",
           tech: {
             tech1: "Django",
             tech2: "HTMX",
