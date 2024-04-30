@@ -10,7 +10,7 @@
           <v-icon medium color="deep-purple accent-2" left
             >mdi-leaf-maple</v-icon
           >
-          <span>Vancouver,&nbsp;</span>
+          <span>Toronto,&nbsp;</span>
           <span class="deep-purple--text text--accent-2">Canada</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
