@@ -58,18 +58,19 @@
         Hi, I’m
         <span class="deep-purple--text text--accent-2">@raja-chaudhary</span>.
         I’m interested in backend development using
-        <span class="deep-purple--text text--accent-2">Django</span> and
+        <span class="deep-purple--text text--accent-2">Django (Python)</span> and
         <span class="deep-purple--text text--accent-2"
-          >Django REST Framework</span
+          >SpringBoot (Java)</span
         >
-        (Python). I am comfortable utilizing
+        . I am comfortable utilizing
         <span class="deep-purple--text text--accent-2">Vue</span> to make my web
         apps more lively and user friendly however, I prefer
         <span class="deep-purple--text text--accent-2">HTMX</span> for front-end
-        dynamic rendering with Django. Later I plan on learning
-        <span class="deep-purple--text text--accent-2">Flutter</span> to convert
-        my web-app into a mobile app. I’m looking to work with a team of smart
-        and compassionate developers.
+        dynamic rendering. I have more than <span class="deep-purple--text text--accent-2">5+ years of experience</span> in software
+        development. I have navigated diverse organizational structures, including startups, freelance contract work,
+and top IT firms. Demonstrating agility, reliability, and proficiency in collaborative team environments or independent
+roles, I bring accountability and expertise in technologies including AWS services, Splunk monitoring, LaunchDarkly
+feature toggling and more. Proven ability to contribute to software development at any scale.
       </div>
     </v-container>
 
@@ -250,7 +251,7 @@ export default {
       text1: [
         "Full-Stack Developer",
         "Software Developer",
-        "Python/Django/Vue/HTMX",
+        "Python/Django/Java/SpringBoot/Vue/HTMX",
       ],
       // leftImage: "https://i.imgur.com/CLNHHBM.jpg",   // Old Imgur Links
       // rightImage: "https://i.imgur.com/25Yc1UC.jpg",  // Old Imgur Links

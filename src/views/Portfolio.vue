@@ -467,18 +467,29 @@ export default {
         {
           type: "Python",
           icon: "mdi-language-python",
-          exp: "2+ years of experience",
-          line1: "My preferred language.",
+          exp: "4+ years of experience",
+          line1: "Preferred language.",
           line2:
             "'Extremely comfortable with writing, reading, testing and debugging.'",
           detail:
-            "Been continuously using python for past 2 years, previously with my employer and currently for my clients. Have also built various portfolio projects in Python - one of them being a SaaS tool.",
+            "Have used python for more than 4 years with my employers and my clients. I have also built various portfolio projects in Python - one of them being a SaaS tool.",
+          reveal: false,
+        },
+        {
+          type: "Java",
+          icon: "mdi-language-java",
+          exp: "2+ years of experience",
+          line1: "Comfortable using Java.",
+          line2:
+            "'Been writing enterprise systems in Java for past 2 years.'",
+          detail:
+            "Understand the OOP concepts and have used Java to write enterprise systems. Have also used Java to write RESTful APIs using Spring Boot.",
           reveal: false,
         },
         {
           type: "Javascript",
           icon: "mdi-language-javascript",
-          exp: "2+ years of experience",
+          exp: "3+ years of experience",
           line1: "Most used language.",
           line2: "'Diversified experience in JS.'",
           detail:
@@ -488,7 +499,7 @@ export default {
         {
           type: "CSS",
           icon: "mdi-language-css3",
-          exp: "2+ years of experience",
+          exp: "3+ years of experience",
           line1: "SASS/Tailwind.",
           line2:
             "'I don't always rely on JS libraries for things that can be achieved using CSS.'",
@@ -499,7 +510,7 @@ export default {
         {
           type: "GitHub",
           icon: "mdi-github",
-          exp: "2+ years of experience",
+          exp: "5+ years of experience",
           line1: "Git/Git CLI.",
           line2:
             "'Always maintaining a version control of all of my projects.'",
@@ -512,12 +523,23 @@ export default {
         {
           type: "Django",
           icon: "mdi-language-python",
-          exp: "2+ years of experience",
+          exp: "4+ years of experience",
           line1: "Highly Proficient.",
           line2:
             "'Experience creating all sort of websites including blogs/e-commerce/saas.'",
           detail:
             "The Django MVT model is like a second nature to me. Writing complex queries, creating webhooks, integrating third-party APIs, utilizing multiprocessors etc. I have worked on most of the commonly used Django features.",
+          reveal: false,
+        },
+        {
+          type: "Spring Boot",
+          icon: "mdi-language-java",
+          exp: "2+ years of experience",
+          line1: "Advanced user.",
+          line2:
+            "'Have used Spring Boot for enterprise solutions.'",
+          detail:
+            "Have used Spring Boot to create scalable RESTful APIs. Proficient with Spring Boot annotations, Spring Boot security, Spring Boot data JPA etc.",
           reveal: false,
         },
         {
@@ -548,7 +570,7 @@ export default {
           dialog: false,
           title: "Dudap (Dig Up Da Past)",
           git: "https://github.com/raja-chaudhary/duDap",
-          demo: "https://www.dudap.xyz/",
+          demo: "#",
           tech: {
             tech1: "Django/Python",
             tech2: "HTMX",
@@ -570,6 +592,20 @@ export default {
             tech4: "Heroku",
           },
           poster: "https://i.imgur.com/U1aVAn9.png",
+        },
+        // Polar Pulse
+        {
+          dialog: false,
+          title: "Polar Pulse",
+          git: "https://github.com/raja-chaudhary/PolarPulse",
+          demo: "https://polarpulse.streamlit.app/",
+          tech: {
+            tech1: "FastAPI/Python",
+            tech2: "OpenAI",
+            tech3: "PostgreSQL",
+            tech4: "BeautifulSoup",
+          },
+          poster: "https://i.imgur.com/vclS9h7.png",
         },
         // Chat App
         {
