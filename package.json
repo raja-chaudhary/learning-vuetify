@@ -7,8 +7,8 @@
     "npm": "10.2.4"
 },
   "scripts": {
-    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
