@@ -62,11 +62,9 @@
         <span class="deep-purple--text text--accent-2"
           >SpringBoot (Java)</span
         >
-        . I am comfortable utilizing
-        <span class="deep-purple--text text--accent-2">Vue</span> to make my web
-        apps more lively and user friendly however, I prefer
-        <span class="deep-purple--text text--accent-2">HTMX</span> for front-end
-        dynamic rendering. I have more than <span class="deep-purple--text text--accent-2">5+ years of experience</span> in software
+        . I also have experience with front-end development using
+        <span class="deep-purple--text text--accent-2">Vue</span> and
+        <span class="deep-purple--text text--accent-2">HTMX</span> for dynamic rendering. I have more than <span class="deep-purple--text text--accent-2">5+ years of experience</span> in software
         development. I have navigated diverse organizational structures, including startups, freelance contract work,
 and top IT firms. Demonstrating agility, reliability, and proficiency in collaborative team environments or independent
 roles, I bring accountability and expertise in technologies including AWS services, Splunk monitoring, LaunchDarkly
@@ -249,8 +247,8 @@ export default {
   data() {
     return {
       text1: [
-        "Full-Stack Developer",
-        "Software Developer",
+        "Software Engineer",
+        "Web Developer",
         "Python/Django/Java/SpringBoot/Vue/HTMX",
       ],
       // leftImage: "https://i.imgur.com/CLNHHBM.jpg",   // Old Imgur Links
